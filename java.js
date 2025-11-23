@@ -85,14 +85,14 @@ heroCarousel.addEventListener('mouseleave', () => {
 
 // Penalty Table Data
 const penaltyData = [
-    { name: 'John Smith', id: 'S12345', violation: 'Minor', date: '2023-10-15', amount: '$25', status: 'unpaid' },
-    { name: 'Emily Johnson', id: 'S12346', violation: 'Major', date: '2023-10-14', amount: '$50', status: 'paid' },
-    { name: 'Michael Brown', id: 'S12347', violation: 'Minor', date: '2023-10-13', amount: '$25', status: 'unpaid' },
-    { name: 'Sarah Davis', id: 'S12348', violation: 'Minor', date: '2023-10-12', amount: '$25', status: 'paid' },
-    { name: 'David Wilson', id: 'S12349', violation: 'Major', date: '2023-10-11', amount: '$50', status: 'unpaid' },
-    { name: 'Jessica Miller', id: 'S12350', violation: 'Minor', date: '2023-10-10', amount: '$25', status: 'paid' },
-    { name: 'Christopher Taylor', id: 'S12351', violation: 'Major', date: '2023-10-09', amount: '$50', status: 'unpaid' },
-    { name: 'Amanda Anderson', id: 'S12352', violation: 'Minor', date: '2023-10-08', amount: '$25', status: 'paid' }
+    { name: 'Aritro Das', id: '242-35-260', violation: 'Minor', date: '2025-10-15', amount: '25tk', status: 'unpaid' },
+    { name: 'Sakib Hasan', id: '242-35-259', violation: 'Major', date: '2025-10-14', amount: '250tk', status: 'paid' },
+    { name: 'Shams Kabir', id: '242-35-154', violation: 'Minor', date: '2025-10-13', amount: '50tk', status: 'unpaid' },
+    { name: 'Moumita Das', id: '242-35-834', violation: 'Minor', date: '2025-10-12', amount: '30tk', status: 'paid' },
+    { name: 'Ratul Hasan', id: '242-35-349', violation: 'Major', date: '2025-10-11', amount: '170tk', status: 'unpaid' },
+    { name: 'Prottoy Kumar Pramanik', id: '242-35-336', violation: 'Minor', date: '2025-10-10', amount: '20tk', status: 'paid' },
+    { name: 'Ridwan Siddique', id: '242-35-045', violation: 'Major', date: '2025-10-09', amount: '285tk', status: 'unpaid' },
+    { name: 'Khairun Nazmin Khushi', id: '242-35-745', violation: 'Minor', date: '2025-10-08', amount: '50tk', status: 'paid' }
 ];
 
 // Populate Penalty Table
@@ -432,4 +432,5 @@ document.head.appendChild(style);
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
     // Any initialization code that needs to run after DOM is fully loaded
+
 });
