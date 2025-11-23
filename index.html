@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trashawk - AI-Powered Campus Accountability</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-hawk"></i>
+                <span>Trashawk</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#penalties">Penalties</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch">
+                    <label for="theme-switch" class="theme-toggle-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <span class="theme-toggle-ball"></span>
+                    </label>
+                </div>
+                <div class="more-options">
+                    <button class="more-btn"><i class="fas fa-ellipsis-v"></i></button>
+                    <div class="dropdown-menu">
+                        <a href="#"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-carousel">
+            <div class="carousel-slide active">
+                <div class="slide-content">
+                    <h1>Trashawk: Building a Clean, Accountable Campus</h1>
+                    <p>AI-powered system to detect trash, identify responsible students, and promote campus cleanliness</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-secondary">Watch Demo</button>
+                    </div>
+                </div>
+                <div class="slide-image">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>Watch Introduction Video</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h1>AI-Powered Trash Detection</h1>
+                    <p>Our advanced computer vision system automatically identifies litter and tracks violations</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+                <div class="slide-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-robot"></i>
+                        <p>AI Detection System</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h1>Reward Clean Campus Heroes</h1>
+                    <p>Students who maintain cleanliness earn points and recognition</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">View Rewards</button>
+                    </div>
+                </div>
+                <div class="slide-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-trophy"></i>
+                        <p>Campus Heroes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <h3>AI Trash Detection</h3>
+                    <p>Advanced computer vision identifies litter in real-time across campus locations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>Accountability System</h3>
+                    <p>Identify responsible students and apply appropriate penalties for violations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Rewards Program</h3>
+                    <p>Incentivize and reward students who help maintain campus cleanliness</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-time Analytics</h3>
+                    <p>Comprehensive dashboard with insights, trends, and violation reports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Penalty Section -->
+    <section id="penalties" class="penalties">
+        <div class="container">
+            <h2 class="section-title">Penalty & Fine Checker</h2>
+            <div class="penalty-controls">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search by name or ID...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-controls">
+                    <select id="status-filter">
+                        <option value="all">All Status</option>
+                        <option value="paid">Paid</option>
+                        <option value="unpaid">Unpaid</option>
+                    </select>
+                    <select id="violation-filter">
+                        <option value="all">All Violations</option>
+                        <option value="minor">Minor</option>
+                        <option value="major">Major</option>
+                    </select>
+                </div>
+            </div>
+            <div class="penalty-table-container">
+                <table class="penalty-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="name">Name <i class="fas fa-sort"></i></th>
+                            <th data-sort="id">Student ID <i class="fas fa-sort"></i></th>
+                            <th data-sort="violation">Violation Type <i class="fas fa-sort"></i></th>
+                            <th data-sort="date">Date <i class="fas fa-sort"></i></th>
+                            <th data-sort="amount">Penalty Amount <i class="fas fa-sort"></i></th>
+                            <th data-sort="status">Status <i class="fas fa-sort"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard">
+        <div class="container">
+            <h2 class="section-title">Analytics Dashboard</h2>
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Total Violations</h3>
+                    <div class="stat-value">247</div>
+                    <div class="stat-change up">+12% this month</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Reward Points</h3>
+                    <div class="stat-value">1,248</div>
+                    <div class="stat-change up">+8% this month</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Top Offenders</h3>
+                    <div class="stat-value">15</div>
+                    <div class="stat-change down">-5% this month</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Clean Zones</h3>
+                    <div class="stat-value">78%</div>
+                    <div class="stat-change up">+3% this month</div>
+                </div>
+            </div>
+            <div class="dashboard-charts">
+                <div class="chart-container">
+                    <canvas id="violations-chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="violation-types-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2 class="section-title">Interactive Demo</h2>
+            <div class="demo-container">
+                <div class="demo-controls">
+                    <button class="btn btn-primary" id="upload-btn">
+                        <i class="fas fa-upload"></i> Upload Image
+                    </button>
+                    <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                    <button class="btn btn-secondary" id="reset-btn">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+                <div class="demo-area">
+                    <div class="image-container">
+                        <div class="placeholder-image">
+                            <i class="fas fa-image"></i>
+                            <p>Upload an image to see AI detection in action</p>
+                        </div>
+                        <canvas id="detection-canvas"></canvas>
+                    </div>
+                    <div class="demo-results">
+                        <h3>Detection Results</h3>
+                        <div class="result-item">
+                            <span class="result-label">Trash Detected:</span>
+                            <span class="result-value" id="trash-count">0</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Violation Level:</span>
+                            <span class="result-value" id="violation-level">None</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Penalty Points:</span>
+                            <span class="result-value" id="penalty-points">0</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Student ID:</span>
+                            <span class="result-value" id="student-id">N/A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Trashawk</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>Trashawk is an AI-powered campus accountability system designed to promote cleanliness and environmental responsibility among students. By combining advanced computer vision with a fair penalty and reward system, we're transforming how campuses maintain their environments.</p>
+                    <p>Our system automatically detects litter, identifies responsible individuals, applies appropriate penalties, and rewards those who contribute to campus cleanliness.</p>
+                </div>
+                <div class="testimonials">
+                    <h3>What Our Campus Cleaners Say</h3>
+                    <div class="testimonial-cards">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Since Trashawk was implemented, our workload has decreased by 40%. Students are more conscious about keeping the campus clean."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Maria Rodriguez</h4>
+                                    <p>Campus Cleaner, 5 years</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"The reward system has created healthy competition among students. I've noticed a significant improvement in campus cleanliness."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h4>James Wilson</h4>
+                                    <p>Head of Facilities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Campus Drive, University City, State 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@trashawk.edu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-hawk"></i>
+                        <span>Trashawk</span>
+                    </div>
+                    <p>AI-powered campus accountability system for a cleaner environment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#penalties">Penalties</a></li>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Trashawk. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="java.js"></script>
+</body>
+</html>
